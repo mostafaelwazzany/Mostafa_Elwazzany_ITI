@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostafa Aiman Elwazzany</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/353838_code_html_web_icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container-fluid">
+        <nav class="navbar">
+            <div class="col-1">
+                <nav class="nav-logo">
+                    <h1><a href="#"><img src="img/353838_code_html_web_icon.png" alt=""></a></h1>
+                </nav>
+            </div>
+            <div class="navbar-toggler col-11 text-right" id="navbarSupportedContent">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="col-md-7 navItems">
+                <nav class="nav-items">
+                    <ul>
+<li class="home2"><a href="index.html#home" class="nav-livk">Home</a></li>
+<li class="about2"><a href="index.html#about" class="nav-livk">About</a></li>
+<li class="skills2"><a href="index.html#skills" class="nav-livk">Skills</a></li>
+<li class="projects2"><a href="index.html#projects" class="nav-livk">Projects</a></li>
+<li class="contact2"><a href="happymessage.html" class="nav-livk">Happy Message</a></li>
+<li class="contact2"><a href="index.htm#contact" class="nav-livk">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-md-4">
+                <nav class="nav-social">
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/mostafa.aimanelwzzany" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/mostafaelwazzany" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://x.com/Mostafawazzany1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mostafa_elwzzany" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mostafa-aiman" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="box-menu">
+    <div class="item-close">
+        Close Menu
+        <i class="fa-solid fa-xmark" id="close-menu"></i>
+    </div>
+    <ul class="mob-nav">
+<li><a href="index.html#home">Home</a></li>
+<li><a href="index.html#about">About</a></li>
+<li><a href="index.html#skills">Skills</a></li>
+<li><a href="index.html#projects">Projects</a></li>
+<li><a href="happymessage.html">Happy Message</a></li>
+<li><a href="index.htm#contact">Contact</a></li>
+
+
+    </ul>
+</div>
+
+<main>
+  <section class="happy-message">
+    <img src="img/undraw_fresh-notification_hnv2.svg" alt="Notification Image" class="happy-image">
+    <h2>Write me a happy message in 5 seconds ❤</h2>
+
+    <div class="form-wrapper" id="messageFormWrapper">
+      <form action="https://formsubmit.co/mostafawazzany550@gmail.com" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <textarea name="message" placeholder="Write a kind message..." class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-contact">Send</button>
+      </form>
+    </div>
+
+    <div class="thank-you" id="thankYou">thx for your message 💛</div>
+  </section>
+</main>
+
+<script>
+  setTimeout(() => {
+    document.getElementById('messageFormWrapper').style.display = 'block';
+  }, 5000);
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    this.style.display = 'none';
+    document.getElementById('thankYou').style.display = 'block';
+    this.submit();
+  });
+</script>
+<script src="js/script.js"></script>
+</body>
+</html>
